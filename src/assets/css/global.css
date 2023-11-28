@@ -145,9 +145,8 @@ nav a {
 /* ///////// */
 
 .bloco_size {
-    width: 430px;
-    height: 380px;
-    margin: 25px;
+    width: 275px;
+    height: 215px;
     border-radius: 50px;
     box-shadow: var(--drop-shadow);
     overflow: hidden;
