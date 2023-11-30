@@ -1,39 +1,23 @@
+<app-header
+    [color]="headerColors.home"
+    titulo="CalmaMente"
+    [h1HeaderColor]="h1HeaderColors.home"
+    [textColor]="textColors.home"
+    [textColor]="textColors.home"
+    [textColor]="textColors.home"
+    [btnColor]="btnColors.home"/>
+
 <main>
     <div class="container_cards">
+
         <app-card [color]="Colors.ansiedade" route="ansiedade.html" text="Ansiedade" img="assets/img/ansiedade.png" />
-        <!-- <div class="card_size card_ansiedade">
-                <a href="ansiedade.html">
-                <h3>Ansiedade</h3>
-                <img src="assets/img/ansiedade.png" alt="ansiedade">
-            </a>
-        </div> -->
 
         <app-card [color]="Colors.tdah" route="tdah.html" text="TDAH" img="assets/img/tdah.png" />
 
-        <!-- <div class="card_size card_tdah">
-            <a href="tdah.html">
-                <h3>TDAH</h3>
-                <img src="assets/img/tdah.png" alt="tdah">
-            </a>
-        </div> -->
-
         <app-card [color]="Colors.depressao" route="depressao.html" text="Depressão" img="assets/img/depressao.png" />
-
-        <!-- <div class="card_size card_depressao">
-            <a href="depressao.html">
-                <h3>Depressão</h3>
-                <img src="assets/img/depressao.png" alt="depressao">
-            </a>
-        </div> -->
 
         <app-card [color]="Colors.api" route="quemsomos.html" text="Clínicas" img="assets/img/pointer.png" />
 
-        <!-- <div class="card_size card_api">
-            <a href="quemsomos.html">
-            <h3>Clínicas </h3>
-                <img src="assets/img/pointer.png" alt="somos">
-            </a>
-        </div> -->
     </div>
     <aside>
         <div class="container_banner">
@@ -42,5 +26,5 @@
             </div>
         </div>
     </aside>
-    
+
 </main>

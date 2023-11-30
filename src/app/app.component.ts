@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-import { Colors, btnColors, textColors } from './components/header/header.component';
+import { headerColors, btnColors, textColors } from './components/header/header.component';
 import { footerColors } from './components/footer/footer.component';
 
 @Component({
@@ -9,7 +9,7 @@ import { footerColors } from './components/footer/footer.component';
 })
 export class AppComponent {
   title = 'CalmaMenteAngular';
-  public Colors = Colors;
+  public headerColors = headerColors;
   public btnColors = btnColors;
   public textColors = textColors;
   public footerColors = footerColors;

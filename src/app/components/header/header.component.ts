@@ -1,12 +1,20 @@
 import { Component, Input } from '@angular/core';
 
-export enum Colors {
+export enum headerColors {
   home = "header_home",
   ansiedade = "header_ansiedade",
   tdah = "header_tdah",
   depressao = "header_depressao",
   api = "header_api"
 }
+
+export enum h1HeaderColors {
+    home = "h1_header_home",
+    ansiedade = "h1_header_ansiedade",
+    tdah = "h1_header_tdah",
+    depressao = "h1_header_depressao",
+    api = "h1_header_api"
+  }
 
 export enum btnColors {
   home = "btn_nav_home",
@@ -30,7 +38,9 @@ export enum textColors {
   styleUrls: ['./header.component.css']
 })
 export class HeaderComponent {
-  @Input() color: Colors = Colors.depressao;
+  @Input() color: headerColors = headerColors.depressao;
+
+  @Input() h1HeaderColor: h1HeaderColors = h1HeaderColors.depressao;
 
   @Input() titulo="";
 

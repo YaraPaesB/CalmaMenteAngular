@@ -9,18 +9,39 @@
 .header_ansiedade {
     background-color: var(--light-pink);
 }
-  
+
 .header_tdah {
     background-color: var(--light-green);
 }
-  
+
 .header_depressao {
     background-color: var(--dark-blue-light);
 }
-  
+
 .header_api {
     background-color: var(--light-yellow);
 }
+
+.h1_header_home {
+    color: var(--light-blue-text);
+}
+
+.h1_header_ansiedade {
+    color: var(--light-pink-text);
+}
+
+.h1_header_tdah {
+    color: var(--green-text);
+}
+
+.h1_header_depressao {
+    color: var(--dark-blue);
+}
+
+.h1_header_api {
+    color: var(--yellow-text);
+}
+
 
 .btn_nav_home {
     color: var(--blue-text);
@@ -48,21 +69,21 @@
 }
 
 .text_home {
-    color: var(--light-blue-text);
+    background-color: var(--light-blue-text);
 }
 
 .text_ansiedade {
-    color: var(--light-pink-text);
+    background-color: var(--light-pink-text);
 }
 
 .text_tdah {
-    color: var(--green-text);
+    background-color: var(--green-text);
 }
 
 .text_depressao {
-    color: var(--dark-blue);
+    background-color: var(--dark-blue);
 }
 
 .text_api {
-    color: var(--yellow-text);
+    background-color: var(--yellow-text);
 }
