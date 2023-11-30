@@ -11,10 +11,6 @@ import { h2Colors } from 'src/app/components/modal-info/modal-info.component';
 })
 export class AnsiedadePageComponent {
 
-  public teste(): void {
-    alert("a");
-  }
-
   public headerColors = headerColors;
   public btnColors = btnColors;
   public textColors = textColors;
