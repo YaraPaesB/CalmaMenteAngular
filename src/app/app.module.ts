@@ -7,6 +7,9 @@ import { CardComponent } from './components/card/card.component';
 import { HeaderComponent } from './components/header/header.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { HomeComponent } from './pages/home/home.component';
+import { AnsiedadePageComponent } from './pages/ansiedade-page/ansiedade-page.component';
+import { ArtigoComponent } from './components/artigo/artigo.component';
+import { ModalInfoComponent } from './components/modal-info/modal-info.component';
 
 @NgModule({
   declarations: [
@@ -14,7 +17,10 @@ import { HomeComponent } from './pages/home/home.component';
     HomeComponent,
     HeaderComponent,
     FooterComponent,
-    CardComponent
+    CardComponent,
+    AnsiedadePageComponent,
+    ArtigoComponent,
+    ModalInfoComponent
   ],
   imports: [
     BrowserModule,
