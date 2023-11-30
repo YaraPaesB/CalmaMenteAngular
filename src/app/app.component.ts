@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Colors, btnColors, textColors } from './components/header/header.component';
 
 @Component({
   selector: 'app-root',
@@ -7,4 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'CalmaMenteAngular';
+  public Colors = Colors;
+  public btnColors = btnColors;
+  public textColors = textColors;
 }

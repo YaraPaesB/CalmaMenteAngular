@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { Colors } from 'src/app/components/card/card.component';
 
 @Component({
   selector: 'app-home',
@@ -7,4 +8,6 @@ import { Component } from '@angular/core';
 })
 export class HomeComponent {
 
+  public Colors = Colors;
+  public teste = "sou lindo"
 }
