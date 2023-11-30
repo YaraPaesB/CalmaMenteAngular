@@ -1,0 +1,23 @@
+<app-header
+    [color]="headerColors.tdah"
+    titulo="TDAH"
+    [h1HeaderColor]="h1HeaderColors.tdah"
+    [textColor]="textColors.tdah"
+    [textColor]="textColors.tdah"
+    [textColor]="textColors.tdah"
+    [btnColor]="btnColors.tdah"/>
+
+<main>
+    <app-panic-btn />
+        <div class="artigos">
+            <app-modal-info [h2Color]="h2Colors.tdah" titulo="O que é TDAH?" />
+            <div class="flex_center flex_column gap-32">
+                <app-artigo titulo="Artigo 1" />
+                <app-artigo titulo="Artigo 1" />
+                <app-artigo titulo="Artigo 1" />
+            </div>
+        </div>
+</main>
+
+<app-footer [color]="footerColors.tdah" />
+

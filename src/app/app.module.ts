@@ -11,6 +11,8 @@ import { AnsiedadePageComponent } from './pages/ansiedade-page/ansiedade-page.co
 import { ArtigoComponent } from './components/artigo/artigo.component';
 import { ModalInfoComponent } from './components/modal-info/modal-info.component';
 import { PanicBtnComponent } from './components/panic-btn/panic-btn.component';
+import { TdahPageComponent } from './pages/tdah-page/tdah-page.component';
+import { DepressaoPageComponent } from './pages/depressao-page/depressao-page.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import { PanicBtnComponent } from './components/panic-btn/panic-btn.component';
     AnsiedadePageComponent,
     ArtigoComponent,
     ModalInfoComponent,
-    PanicBtnComponent
+    PanicBtnComponent,
+    TdahPageComponent,
+    DepressaoPageComponent
   ],
   imports: [
     BrowserModule,

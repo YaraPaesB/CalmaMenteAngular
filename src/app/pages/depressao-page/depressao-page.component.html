@@ -1,0 +1,23 @@
+<app-header
+    [color]="headerColors.depressao"
+    titulo="Depressão"
+    [h1HeaderColor]="h1HeaderColors.depressao"
+    [textColor]="textColors.depressao"
+    [textColor]="textColors.depressao"
+    [textColor]="textColors.depressao"
+    [btnColor]="btnColors.depressao"/>
+
+<main>
+    <app-panic-btn />
+        <div class="artigos">
+            <app-modal-info [h2Color]="h2Colors.depressao" titulo="O que é Depressão?" />
+            <div class="flex_center flex_column gap-32">
+                <app-artigo titulo="Artigo 1" />
+                <app-artigo titulo="Artigo 1" />
+                <app-artigo titulo="Artigo 1" />
+            </div>
+        </div>
+</main>
+
+<app-footer [color]="footerColors.depressao" />
+

@@ -9,11 +9,11 @@
 }
 
 .footer_tdah {
-    background-color: var(--light-blue);
+    background-color: var(--light-green);
 }
 
 .footer_depressao {
-    background-color: var(--light-blue);
+    background-color: var(--dark-blue-light);
 }
 
 .footer_api {
