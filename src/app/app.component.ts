@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { Colors, btnColors, textColors } from './components/header/header.component';
+import { footerColors } from './components/footer/footer.component';
 
 @Component({
   selector: 'app-root',
@@ -11,4 +12,5 @@ export class AppComponent {
   public Colors = Colors;
   public btnColors = btnColors;
   public textColors = textColors;
+  public footerColors = footerColors;
 }

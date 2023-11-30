@@ -1,5 +1,23 @@
 @import 'src/assets/css/global.css';
 
-.footer {
+
+
+.footer_home {
+    background-color: var(--light-blue);
+}
+
+.footer_ansiedade {
+    background-color: var(--light-blue);
+}
+
+.footer_tdah {
+    background-color: var(--light-blue);
+}
+
+.footer_depressao {
+    background-color: var(--light-blue);
+}
+
+.footer_api {
     background-color: var(--light-blue);
 }
