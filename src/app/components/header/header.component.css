@@ -2,6 +2,10 @@
 
 /* Classes novas */
 
+header {
+    border-radius: 30px;
+}
+
 .header_home {
     background-color: var(--light-blue);
 }
