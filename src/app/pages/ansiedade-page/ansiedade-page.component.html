@@ -10,11 +10,13 @@
 <main>
     <app-panic-btn />
         <div class="artigos">
-            <app-card-info [h2Color]="h2Colors.ansiedade" titulo="O que é Ansiedade?" />
+            <app-card-info [h2Color]="h2Colors.ansiedade" [title]="apiResponse.title" [description]="apiResponse.description" />
             <div class="flex_center flex_column gap-32">
-                <app-card-article titulo="Artigo 1" />
-                <app-card-article titulo="Artigo 1" />
-                <app-card-article titulo="Artigo 1" />
+                <app-card-article 
+                    *ngFor="let article of apiResponse.articles" 
+                    [title]="article.title" 
+                    [description]="article.description"
+                />
             </div>
         </div>
 </main>

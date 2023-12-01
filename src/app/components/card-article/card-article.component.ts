@@ -6,7 +6,14 @@ import { Component, Input } from '@angular/core';
   styleUrls: ['./card-article.component.css']
 })
 export class ArtigoComponent {
-  @Input() action!: () => void;
 
-  @Input() titulo = "";
+  @Input() title!: string;
+
+  @Input() description!: string;
+
+  public modalIsOpen = false;
+
+  public toggleModal() {
+    this.modalIsOpen = !this.modalIsOpen
+  }
 }
