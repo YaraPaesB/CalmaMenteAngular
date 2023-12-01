@@ -15,4 +15,10 @@ export class ModalInfoComponent {
   @Input() h2Color: h2Colors = h2Colors.ansiedade;
 
   @Input() titulo = "";
+
+  public modalIsOpen = false;
+
+  public toggleModal() {
+    this.modalIsOpen = !this.modalIsOpen
+  }
 }

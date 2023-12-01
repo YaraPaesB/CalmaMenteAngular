@@ -13,6 +13,7 @@ import { ModalInfoComponent } from './components/card-info/card-info.component';
 import { PanicBtnComponent } from './components/panic-btn/panic-btn.component';
 import { TdahPageComponent } from './pages/tdah-page/tdah-page.component';
 import { DepressaoPageComponent } from './pages/depressao-page/depressao-page.component';
+import { ModalComponent } from './components/modal/modal.component';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { DepressaoPageComponent } from './pages/depressao-page/depressao-page.co
     ModalInfoComponent,
     PanicBtnComponent,
     TdahPageComponent,
-    DepressaoPageComponent
+    DepressaoPageComponent,
+    ModalComponent
   ],
   imports: [
     BrowserModule,
