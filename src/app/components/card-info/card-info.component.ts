@@ -7,9 +7,9 @@ export enum h2Colors {
 }
 
 @Component({
-  selector: 'app-modal-info',
-  templateUrl: './modal-info.component.html',
-  styleUrls: ['./modal-info.component.css']
+  selector: 'app-card-info',
+  templateUrl: './card-info.component.html',
+  styleUrls: ['./card-info.component.css']
 })
 export class ModalInfoComponent {
   @Input() h2Color: h2Colors = h2Colors.ansiedade;

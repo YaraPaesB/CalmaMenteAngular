@@ -1,9 +1,9 @@
 import { Component, Input } from '@angular/core';
 
 @Component({
-  selector: 'app-artigo',
-  templateUrl: './artigo.component.html',
-  styleUrls: ['./artigo.component.css']
+  selector: 'app-card-article',
+  templateUrl: './card-article.component.html',
+  styleUrls: ['./card-article.component.css']
 })
 export class ArtigoComponent {
   @Input() action!: () => void;

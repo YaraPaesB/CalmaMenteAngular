@@ -2,7 +2,7 @@ import { h1HeaderColors } from './../../components/header/header.component';
 import { Component } from '@angular/core';
 import { footerColors } from 'src/app/components/footer/footer.component';
 import { headerColors, btnColors, textColors } from 'src/app/components/header/header.component';
-import { h2Colors } from 'src/app/components/modal-info/modal-info.component';
+import { h2Colors } from 'src/app/components/card-info/card-info.component';
 
 @Component({
   selector: 'app-ansiedade-page',
