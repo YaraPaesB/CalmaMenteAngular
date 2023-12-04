@@ -5,9 +5,24 @@
     [textColor]="textColors.ansiedade"
     [textColor]="textColors.ansiedade"
     [textColor]="textColors.ansiedade"
-    [btnColor]="btnColors.ansiedade"/>
+    [btnColor]="btnColors.ansiedade"
+/>
+
+<main class="flex_center">
+    <app-card-img 
+    [color]="ImgBorderColors.register"
+    img="assets/img/cadastro__img.jpeg"
+    />
+    <div class="flex_center flex_column gap-32">
+        <app-input tipo="text" name="nome" placeholder="Seu Nome" />
+        <app-input tipo="text" name="email" placeholder="Seu E-mail" />
+        <app-input tipo="text" name="cpf" placeholder="Seu CPF" />
+        <app-input tipo="text" name="password" placeholder="Defina sua senha" />
+        <app-input-checkbox />
+
+    </div>
+
+</main>
 
 
-    
-
-    <app-footer [color]="footerColors.ansiedade" />
+<app-footer [color]="footerColors.ansiedade" />
