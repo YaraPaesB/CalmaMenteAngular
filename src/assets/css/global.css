@@ -156,12 +156,7 @@ form {
     gap: calc(var(--val-size)*2);
 }
 
-input {
-    padding: 10px;
-    font-size: 28px;
-    border: none;
-    box-shadow: var(--drop-shadow);
-}
+
 
 .btn {
     margin: 10px;

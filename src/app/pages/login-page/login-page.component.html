@@ -1,0 +1,31 @@
+<app-header
+    [color]="headerColors.home"
+    titulo="Login"
+    [h1HeaderColor]="h1HeaderColors.home"
+    [textColor]="textColors.home"
+    [textColor]="textColors.home"
+    [textColor]="textColors.home"
+    [btnColor]="btnColors.home"
+/>
+<main class="flex_center">
+    <app-card-img 
+        [color]="ImgBorderColors.login"
+        img="assets/img/login__img.jpeg" 
+
+    />
+    <div class="flex_center flex_column gap-32">
+        <form>
+            <app-input tipo="email" name="email" placeholder="E-mail" />
+            <app-input tipo="password" name="password" placeholder="Senha" />
+            <app-input-checkbox />
+
+        </form>
+        <div class="flex_center flex_column">
+            <app-btn-pages [color]="BtnColors.login" text="Login" />
+            <app-links route="/cadastro" text="Cadastre-se"/>
+            <app-links route="/password" text="Esqueceu sua senha?"/>
+        </div>
+    </div>
+</main>
+
+<app-footer [color]="footerColors.home" />

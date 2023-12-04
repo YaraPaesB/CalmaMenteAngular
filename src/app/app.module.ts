@@ -14,6 +14,13 @@ import { PanicBtnComponent } from './components/panic-btn/panic-btn.component';
 import { TdahPageComponent } from './pages/tdah-page/tdah-page.component';
 import { DepressaoPageComponent } from './pages/depressao-page/depressao-page.component';
 import { ModalComponent } from './components/modal/modal.component';
+import { LoginPageComponent } from './pages/login-page/login-page.component';
+import { RegisterPageComponent } from './pages/register-page/register-page.component';
+import { CardImgComponent } from './components/card-img/card-img.component';
+import { InputComponent } from './components/input/input.component';
+import { LinksComponent } from './components/links/links.component';
+import { BtnPagesComponent } from './components/btn-pages/btn-pages.component';
+import { InputCheckboxComponent } from './components/input-checkbox/input-checkbox.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +35,14 @@ import { ModalComponent } from './components/modal/modal.component';
     PanicBtnComponent,
     TdahPageComponent,
     DepressaoPageComponent,
-    ModalComponent
+    ModalComponent,
+    LoginPageComponent,
+    RegisterPageComponent,
+    CardImgComponent,
+    InputComponent,
+    LinksComponent,
+    BtnPagesComponent,
+    InputCheckboxComponent
   ],
   imports: [
     BrowserModule,
