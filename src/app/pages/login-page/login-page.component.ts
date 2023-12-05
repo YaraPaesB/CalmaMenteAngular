@@ -23,6 +23,7 @@ export class LoginPageComponent {
     {
       email: "user@user.com",
       senha: "user@123",
+      userType: false,
     }
   ]
   public headerColors = headerColors;
@@ -38,7 +39,7 @@ export class LoginPageComponent {
   public loginForm = new FormGroup ({
     email: new FormControl('', [Validators.required, Validators.email]),
     senha: new FormControl('', Validators.required),
-    userType: new FormControl('')
+    userType: new FormControl(false)
   });
 
   public handleClose() {
@@ -48,14 +49,20 @@ export class LoginPageComponent {
   constructor(private route: Router) {}
 
   public onSubmit() {
-    console.log(this.loginForm.value)
+    console.log(this.loginForm.value);
+    
     const checkData = this.mockedData.find(item => item.email === this.loginForm.value.email);
-    if (!checkData || (checkData.senha===this.loginForm.value.senha && checkData.userType===this.loginForm.value.userType)) {
+    console.log(checkData?.userType === this.loginForm.value.userType);
+    if (!checkData || 
+          !( checkData.senha===this.loginForm.value.senha 
+            && checkData.userType===this.loginForm.value.userType
+            )
+        ) {
       this.errors = "Seus dados estão incorretos!";
       return;
     }
 
-    this.route.navigate([`${this.loginForm.value? "/perfil-usuario" : "/login"}`]);
+    this.route.navigate(['/']);
 
 
   }

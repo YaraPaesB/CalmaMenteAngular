@@ -6,8 +6,8 @@ import { AnsiedadePageComponent } from './pages/ansiedade-page/ansiedade-page.co
 import { TdahPageComponent } from './pages/tdah-page/tdah-page.component';
 import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
-import { UserRegistPageComponent } from './pages/user-regist-page/user-regist-page.component';
-import { ProfessionalRegistPageComponent } from './pages/professional-regist-page/professional-regist-page.component';
+import { ProfessionalProfileComponent } from './pages/professional-profile/professional-profile.component';
+import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -16,8 +16,8 @@ const routes: Routes = [
   {path: 'tdah', component: TdahPageComponent},
   {path: 'login', component:LoginPageComponent},
   {path: 'cadastro', component:RegisterPageComponent},
-  {path: 'perfil-usuario', component:UserRegistPageComponent},
-  {path: 'perfil-profissional', component:ProfessionalRegistPageComponent}
+  {path: 'perfil-usuario', component:UserProfileComponent},
+  {path: 'perfil-profissional', component:ProfessionalProfileComponent}
 
 ];
 

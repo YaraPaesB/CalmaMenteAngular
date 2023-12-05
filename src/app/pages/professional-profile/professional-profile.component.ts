@@ -5,13 +5,12 @@ import { h2Colors } from 'src/app/components/card-info/card-info.component';
 import { footerColors } from 'src/app/components/footer/footer.component';
 import { btnColors, h1HeaderColors, headerColors, textColors } from 'src/app/components/header/header.component';
 import { FormGroup, FormControl } from '@angular/forms';
-
 @Component({
-  selector: 'app-professional-regist-page',
-  templateUrl: './professional-regist-page.component.html',
-  styleUrls: ['./professional-regist-page.component.css']
+  selector: 'app-professional-profile',
+  templateUrl: './professional-profile.component.html',
+  styleUrls: ['./professional-profile.component.css']
 })
-export class ProfessionalRegistPageComponent {
+export class ProfessionalProfileComponent {
   public headerColors = headerColors;
   public btnColors = btnColors;
   public textColors = textColors;

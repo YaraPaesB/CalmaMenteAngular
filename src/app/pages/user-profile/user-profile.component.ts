@@ -8,11 +8,11 @@ import { BtnColors } from 'src/app/components/btn-pages/btn-pages.component';
 import { Validators } from '@angular/forms';
 
 @Component({
-  selector: 'app-user-regist-page',
-  templateUrl: './user-regist-page.component.html',
-  styleUrls: ['./user-regist-page.component.css']
+  selector: 'app-user-profile',
+  templateUrl: './user-profile.component.html',
+  styleUrls: ['./user-profile.component.css']
 })
-export class UserRegistPageComponent {
+export class UserProfileComponent {
   public headerColors = headerColors;
   public btnColors = btnColors;
   public textColors = textColors;

@@ -22,9 +22,9 @@ import { LinksComponent } from './components/links/links.component';
 import { BtnPagesComponent } from './components/btn-pages/btn-pages.component';
 import { InputCheckboxComponent } from './components/input-checkbox/input-checkbox.component';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { UserRegistPageComponent } from './pages/user-regist-page/user-regist-page.component';
-import { ProfessionalRegistPageComponent } from './pages/professional-regist-page/professional-regist-page.component';
 import { ModalFeedbackComponent } from './components/modal-feedback/modal-feedback.component';
+import { UserProfileComponent } from './pages/user-profile/user-profile.component';
+import { ProfessionalProfileComponent } from './pages/professional-profile/professional-profile.component';
 
 @NgModule({
   declarations: [
@@ -47,9 +47,9 @@ import { ModalFeedbackComponent } from './components/modal-feedback/modal-feedba
     LinksComponent,
     BtnPagesComponent,
     InputCheckboxComponent,
-    UserRegistPageComponent,
-    ProfessionalRegistPageComponent,
     ModalFeedbackComponent,
+    UserProfileComponent,
+    ProfessionalProfileComponent,
   ],
   imports: [
     BrowserModule,
