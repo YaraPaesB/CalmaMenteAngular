@@ -14,12 +14,37 @@
     img="assets/img/cadastro__img.jpeg"
     />
     <div class="flex_center flex_column gap-32">
-        <app-input tipo="text" name="nome" placeholder="Seu Nome" />
-        <app-input tipo="text" name="email" placeholder="Seu E-mail" />
-        <app-input tipo="text" name="cpf" placeholder="Seu CPF" />
-        <app-input tipo="text" name="password" placeholder="Defina sua senha" />
-        <app-input-checkbox />
-
+        <form [formGroup]="registerForm" (ngSubmit)="onSubmit()">
+            <input 
+                type="text" 
+                formControlName="nome" 
+                placeholder="Seu Nome"
+            />
+            <input 
+                type="text" 
+                formControlName="cpf" 
+                placeholder="Seu CPF"
+            />
+            <label for="userType">
+                <input type="checkbox"  formControlName="userType" id="userType">
+                Sou Profissional
+            </label>
+            <input
+                type="text" 
+                formControlName="crp" 
+                placeholder="CRP" 
+                *ngIf="registerForm.controls.userType.value"
+            />
+            <input 
+                type="text" 
+                formControlName="email" 
+                placeholder="Seu E-mail"
+            />
+            <input type="text" formControlName="senha" placeholder="Defina sua Senha">
+            <input type="text" formControlName="confirmSenha" placeholder="Repita sua Senha">
+            <app-btn-pages [disabled]="!registerForm.valid || !validateCrp()" [color]="BtnColors.register" text="Cadastre-se" />
+        </form>
+        
     </div>
 
 </main>

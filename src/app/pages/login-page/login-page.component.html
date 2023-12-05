@@ -14,14 +14,16 @@
 
     />
     <div class="flex_center flex_column gap-32">
-        <form>
-            <app-input tipo="email" name="email" placeholder="E-mail" />
-            <app-input tipo="password" name="password" placeholder="Senha" />
-            <app-input-checkbox />
-
+        <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
+            <input type="text" formControlName="email" placeholder="E-mail">
+            <input type="text" formControlName="senha" placeholder="Senha">
+            <label for="userType">
+                <input type="checkbox"  formControlName="userType" id="userType">
+                Sou Profissional
+            </label>
+            <app-btn-pages [disabled]="!loginForm.valid" [color]="BtnColors.login" text="Login" />
         </form>
         <div class="flex_center flex_column">
-            <app-btn-pages [color]="BtnColors.login" text="Login" />
             <app-links route="/cadastro" text="Cadastre-se"/>
             <app-links route="/password" text="Esqueceu sua senha?"/>
         </div>
@@ -29,3 +31,5 @@
 </main>
 
 <app-footer [color]="footerColors.home" />
+
+<app-modal-feedback *ngIf="!!errors" [statusModal]="false" [msg]="errors" (onClose)="handleClose()" />

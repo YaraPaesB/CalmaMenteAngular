@@ -9,12 +9,12 @@
             <span [class]="'bar ' + textColor "></span>
         </label>
         <ul class="menu">
-            <li><a href="index.html">Home</a></li>
-            <li><a href="ansiedade.html">Ansiedade</a></li>
-            <li><a href="depressao.html">Depressão</a></li>
-            <li><a href="tdah.html">TDAH</a></li>
-            <li><a href="quemsomos.html">Quem somos?</a></li>
+            <li><a routerLink="" routerLinkActive="">Home</a></li>
+            <li><a routerLink="/ansiedade" routerLinkActive="active">Ansiedade</a></li>
+            <li><a routerLink="/depressao" routerLinkActive="active">Depressão</a></li>
+            <li><a routerLink="/tdah" routerLinkActive="active">TDAH</a></li>
+            <li><a routerLink="" routerLinkActive="">Quem somos?</a></li>
         </ul>
-        <a routerLink="/login" routerLink="active"><button [class]="btnColor">Login</button></a>
+        <a routerLink="/login" routerLinkActive="active"><button [class]="btnColor">Login</button></a>
     </nav>
 </header>

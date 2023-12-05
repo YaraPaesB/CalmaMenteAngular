@@ -21,6 +21,10 @@ import { InputComponent } from './components/input/input.component';
 import { LinksComponent } from './components/links/links.component';
 import { BtnPagesComponent } from './components/btn-pages/btn-pages.component';
 import { InputCheckboxComponent } from './components/input-checkbox/input-checkbox.component';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { UserRegistPageComponent } from './pages/user-regist-page/user-regist-page.component';
+import { ProfessionalRegistPageComponent } from './pages/professional-regist-page/professional-regist-page.component';
+import { ModalFeedbackComponent } from './components/modal-feedback/modal-feedback.component';
 
 @NgModule({
   declarations: [
@@ -42,11 +46,16 @@ import { InputCheckboxComponent } from './components/input-checkbox/input-checkb
     InputComponent,
     LinksComponent,
     BtnPagesComponent,
-    InputCheckboxComponent
+    InputCheckboxComponent,
+    UserRegistPageComponent,
+    ProfessionalRegistPageComponent,
+    ModalFeedbackComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

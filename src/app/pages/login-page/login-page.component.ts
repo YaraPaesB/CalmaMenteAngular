@@ -4,6 +4,9 @@ import { ImgBorderColors } from 'src/app/components/card-img/card-img.component'
 import { h2Colors } from 'src/app/components/card-info/card-info.component';
 import { footerColors } from 'src/app/components/footer/footer.component';
 import { btnColors, h1HeaderColors, headerColors, textColors } from 'src/app/components/header/header.component';
+import { FormGroup, FormControl } from '@angular/forms';
+import { Validators } from '@angular/forms';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-login-page',
@@ -11,6 +14,17 @@ import { btnColors, h1HeaderColors, headerColors, textColors } from 'src/app/com
   styleUrls: ['./login-page.component.css']
 })
 export class LoginPageComponent {
+  private mockedData = [
+    {
+      email: "user@profissional.com",
+      senha: "profissional@123",
+      userType: true,
+    },
+    {
+      email: "user@user.com",
+      senha: "user@123",
+    }
+  ]
   public headerColors = headerColors;
   public btnColors = btnColors;
   public textColors = textColors;
@@ -19,5 +33,31 @@ export class LoginPageComponent {
   public h1HeaderColors = h1HeaderColors;
   public ImgBorderColors = ImgBorderColors;
   public BtnColors = BtnColors;
+  public errors?: string;
+
+  public loginForm = new FormGroup ({
+    email: new FormControl('', [Validators.required, Validators.email]),
+    senha: new FormControl('', Validators.required),
+    userType: new FormControl('')
+  });
+
+  public handleClose() {
+    this.errors = undefined;
+  }
+
+  constructor(private route: Router) {}
+
+  public onSubmit() {
+    console.log(this.loginForm.value)
+    const checkData = this.mockedData.find(item => item.email === this.loginForm.value.email);
+    if (!checkData || (checkData.senha===this.loginForm.value.senha && checkData.userType===this.loginForm.value.userType)) {
+      this.errors = "Seus dados estão incorretos!";
+      return;
+    }
+
+    this.route.navigate([`${this.loginForm.value? "/perfil-usuario" : "/login"}`]);
+
+
+  }
 
 }

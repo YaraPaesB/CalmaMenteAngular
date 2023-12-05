@@ -14,4 +14,5 @@ export enum BtnColors {
 export class BtnPagesComponent {
   @Input() color: BtnColors = BtnColors.login;
   @Input() text = "";
+  @Input() disabled: boolean = false;
 }
