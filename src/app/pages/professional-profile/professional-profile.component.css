@@ -4,3 +4,14 @@ input {
     border: none;
     box-shadow: var(--drop-shadow);
 }
+
+#lapis {
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+}
+
+.logout {
+    color: white;
+    background-color: var(--dark-red);
+}

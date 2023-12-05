@@ -9,14 +9,27 @@
 />
 
 <main class="flex_center">
-    <app-card-img 
-    [color]="ImgBorderColors.register"
-    img="assets/img/cadastro__img.jpeg"
-    />
+
+
+    <div  class="flex_center flex_column">
+        <app-card-img
+            [color]="ImgBorderColors.login"
+            img="\assets\img\perfil-de-usuario.png"
+        />
+        <div class="flex_center flex_row gap-32">
+            <img src="assets/img/editar.png" id="lapis" width="50" alt="lapis azul e editar foto">
+            <button class="btn logout">Logout</button>
+        </div>
+    </div>
 
     <div class="flex_center flex_column gap-32">
-        <form [formGroup]="professionalRegisterForm">
-            <input type="text" formControlName="abordagem" placeholder="Insira sua abordagem">
+        <form [formGroup]="professionalProfileForm">
+            <input type="text" formControlName="nome" placeholder="ProfessionalUser" readonly>
+            <input type="text" formControlName="cpf" placeholder="000.000.000-00" readonly>
+            <input type="text" formControlName="email" placeholder="user@professional.com" readonly>
+            <input type="text" formControlName="abordagem" placeholder="Cognitivo-Comportamental" readonly>
+            <app-btn-pages [color]="BtnColors.login" text="Salvar"/>
+
         </form>
     </div>
 
@@ -25,3 +38,9 @@
 
 <app-footer [color]="footerColors.home" />
 
+
+<!-- <div class="flex_center flex_column gap-32">
+    <form [formGroup]="professionalRegisterForm">
+        <input type="text" formControlName="abordagem" placeholder="Insira sua abordagem">
+    </form>
+</div> -->

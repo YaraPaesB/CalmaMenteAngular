@@ -20,7 +20,12 @@ export class ProfessionalProfileComponent {
   public ImgBorderColors = ImgBorderColors;
   public BtnColors = BtnColors;
 
-  public professionalRegisterForm = new FormGroup ({
+  public professionalProfileForm = new FormGroup ({
+    nome: new FormControl(''),
+    cpf: new FormControl(''),
+    email: new FormControl(''),
+    crp: new FormControl(''),
     abordagem: new FormControl('')
   })
+
 }

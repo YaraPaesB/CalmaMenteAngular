@@ -49,7 +49,7 @@ import { ProfessionalProfileComponent } from './pages/professional-profile/profe
     InputCheckboxComponent,
     ModalFeedbackComponent,
     UserProfileComponent,
-    ProfessionalProfileComponent,
+    ProfessionalProfileComponent
   ],
   imports: [
     BrowserModule,
