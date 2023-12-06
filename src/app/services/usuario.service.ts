@@ -15,4 +15,8 @@ export class UsuarioService {
     return this.http.post<UserType>(this.baseUrl, usuario)
   }
   
+  // public getUser(email:string) {
+  //   return this.http.get<UserType>(`${this.baseUrl}/${email}`);
+  // }
 }
+

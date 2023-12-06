@@ -17,5 +17,5 @@ export class TranstornoService {
 
   public getTranstorno(id:number) {
     return this.http.get<DisorderResponse>(`${this.baseUrl}/${id}`);
-}
+  }
 }

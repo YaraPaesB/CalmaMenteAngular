@@ -39,11 +39,6 @@ export class PasswordPageComponent {
 
   public onSubmit() {
     console.log(this.passwordForm.value);
-    
-
-
-    this.route.navigate(['/']);
-
-
+    this.route.navigate(['/login']);
   }
 }
