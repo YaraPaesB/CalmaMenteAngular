@@ -5,7 +5,7 @@ export enum headerColors {
   ansiedade = "header_ansiedade",
   tdah = "header_tdah",
   depressao = "header_depressao",
-  api = "header_api"
+  clinicas = "header_clinicas"
 }
 
 export enum h1HeaderColors {
@@ -13,7 +13,7 @@ export enum h1HeaderColors {
     ansiedade = "h1_header_ansiedade",
     tdah = "h1_header_tdah",
     depressao = "h1_header_depressao",
-    api = "h1_header_api"
+    clinicas = "h1_header_clinicas"
   }
 
 export enum btnColors {
@@ -21,7 +21,7 @@ export enum btnColors {
   ansiedade = "btn_nav_ansiedade",
   tdah = "btn_nav_tdah",
   depressao = "btn_nav_depressao",
-  api = "btn_nav_api"
+  clinicas = "btn_nav_clinicas"
 }
 
 export enum textColors {
@@ -29,7 +29,7 @@ export enum textColors {
   ansiedade = "text_ansiedade",
   tdah = "text_tdah",
   depressao = "text_depressao",
-  api = "text_api"
+  clinicas = "text_clinicas"
 }
 
 @Component({

@@ -16,3 +16,8 @@ img {
 .password_color {
     border-color: #5CE1E6;
 }
+
+
+.clinicas_color {
+    border-color: var(--yellow-text);
+}

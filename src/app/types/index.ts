@@ -1,8 +1,25 @@
 type Information = {
-    title:string,
-    description:string
+    id: number,
+    titulo:string,
+    descricao:string
 }
 
 export type DisorderResponse = Information & {
-    articles: Information[]
+    artigos: {
+        id: number,
+        titulo:string,
+        descricao:string,
+        conteudo:string,
+        tema:string
+        }[]
+}
+
+export type UserType = {
+    id?:number,
+    nome:string,
+    dataNascimento:string,
+    cpf:string,
+    senha:string,
+    email:string,
+    crp?:string
 }

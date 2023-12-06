@@ -22,7 +22,7 @@ header {
     background-color: var(--dark-blue-light);
 }
 
-.header_api {
+.header_clinicas {
     background-color: var(--light-yellow);
 }
 
@@ -42,7 +42,7 @@ header {
     color: var(--dark-blue);
 }
 
-.h1_header_api {
+.h1_header_clinicas {
     color: var(--yellow-text);
 }
 
@@ -67,7 +67,7 @@ header {
     background-color: var(--dark-blue);
 }
 
-.btn_nav_api {
+.btn_nav_clinicas {
     color: var(--yellow-text);
     background-color: var(--yellow);
 }
@@ -88,6 +88,6 @@ header {
     background-color: var(--dark-blue);
 }
 
-.text_api {
+.text_clinicas {
     background-color: var(--yellow-text);
 }

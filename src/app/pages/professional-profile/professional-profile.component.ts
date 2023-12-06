@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { BtnColors } from 'src/app/components/btn-pages/btn-pages.component';
 import { ImgBorderColors } from 'src/app/components/card-img/card-img.component';
 import { h2Colors } from 'src/app/components/card-info/card-info.component';
@@ -28,4 +28,9 @@ export class ProfessionalProfileComponent {
     abordagem: new FormControl('')
   })
 
+  @Input() readonly:boolean = true;
+
+  public editEnable() {
+    this.readonly = !this.readonly;
+  }
 }

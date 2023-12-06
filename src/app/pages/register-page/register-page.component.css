@@ -17,3 +17,7 @@ input {
 label {
     font-size: 20pt;
 }
+
+form {
+    padding: calc(var(--val-size)*2);
+}

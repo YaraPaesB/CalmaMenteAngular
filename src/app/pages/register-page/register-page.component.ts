@@ -7,6 +7,8 @@ import { FormGroup, FormControl } from '@angular/forms';
 import { BtnColors } from 'src/app/components/btn-pages/btn-pages.component';
 import { Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { UsuarioService } from 'src/app/services/usuario.service';
+import { HttpClient } from '@angular/common/http';
 @Component({
   selector: 'app-register-page',
   templateUrl: './register-page.component.html',
@@ -25,14 +27,15 @@ export class RegisterPageComponent {
   public registerForm = new FormGroup ({
     nome: new FormControl('', Validators.required),
     cpf: new FormControl('', Validators.required),
+    dataNascimento: new FormControl('', Validators.required),
     userType: new FormControl(false),
-    email: new FormControl('', Validators.required),
+    email: new FormControl('', [Validators.required, Validators.email]),
     senha: new FormControl('', Validators.required),
     confirmSenha: new FormControl('', Validators.required),
     crp: new FormControl('')
   });
 
-  constructor(private route: Router) {}
+  constructor(private route: Router, private httpClient: HttpClient ) {}
 
   public validateCrp() {
     
@@ -43,9 +46,20 @@ export class RegisterPageComponent {
 
     return true;
   }
+
   
   public onSubmit() {
-    console.log(this.registerForm.value);
-    this.route.navigate([`/perfil-${this.registerForm.value.userType ? "profissional" : "usuario"}`])
+    const service = new UsuarioService(this.httpClient);
+    service.register({
+      cpf:this.registerForm.value.cpf as string,
+      nome:this.registerForm.value.nome as string,
+      email:this.registerForm.value.email as string,
+      senha:this.registerForm.value.senha as string,
+      dataNascimento:this.registerForm.value.senha as string,
+      crp: this.registerForm.controls.userType ? this.registerForm.controls.crp.value as string : undefined
+    }).subscribe(data => {
+      console.log(data)
+      this.route.navigate([`/perfil-${this.registerForm.value.userType ? "profissional" : "usuario"}`])
+    })
   }
 }

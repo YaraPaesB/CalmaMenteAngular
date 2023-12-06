@@ -8,6 +8,7 @@ import { LoginPageComponent } from './pages/login-page/login-page.component';
 import { RegisterPageComponent } from './pages/register-page/register-page.component';
 import { ProfessionalProfileComponent } from './pages/professional-profile/professional-profile.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
+import { ClinicasPageComponent } from './pages/clinicas-page/clinicas-page.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -17,7 +18,8 @@ const routes: Routes = [
   {path: 'login', component:LoginPageComponent},
   {path: 'cadastro', component:RegisterPageComponent},
   {path: 'perfil-usuario', component:UserProfileComponent},
-  {path: 'perfil-profissional', component:ProfessionalProfileComponent}
+  {path: 'perfil-profissional', component:ProfessionalProfileComponent},
+  {path: 'clinicas', component:ClinicasPageComponent}
 
 ];
 

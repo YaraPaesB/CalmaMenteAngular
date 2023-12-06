@@ -5,7 +5,7 @@ export enum footerColors {
   ansiedade = "footer_ansiedade",
   tdah = "footer_tdah",
   depressao = "footer_depressao",
-  api = "footer_api"
+  clinicas = "footer_clinicas"
 }
 
 @Component({

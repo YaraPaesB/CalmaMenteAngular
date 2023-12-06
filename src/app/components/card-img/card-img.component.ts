@@ -3,7 +3,8 @@ import { Component, Input } from '@angular/core';
 export enum ImgBorderColors {
   login = "login_color",
   register = "register_color",
-  password = "password_color"
+  password = "password_color",
+  clinicas = "clinicas_color"
 }
 
 @Component({

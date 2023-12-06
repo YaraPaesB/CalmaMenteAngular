@@ -9,13 +9,13 @@
 
 <main>
     <app-panic-btn />
-        <div class="artigos">
-            <app-card-info [h2Color]="h2Colors.depressao" [title]="apiResponse.title" [description]="apiResponse.description"/>
+        <div class="artigos" *ngIf="apiResponse">
+            <app-card-info [h2Color]="h2Colors.depressao" [title]="apiResponse.titulo" [description]="apiResponse.descricao"/>
             <div class="flex_center flex_column gap-32">
                 <app-card-article 
-                    *ngFor="let article of apiResponse.articles" 
-                    [title]="article.title" 
-                    [description]="article.description"
+                    *ngFor="let article of apiResponse.artigos" 
+                    [title]="article.titulo" 
+                    [description]="article.descricao"
                 />
             </div>
         </div>

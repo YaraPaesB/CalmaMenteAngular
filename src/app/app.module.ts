@@ -25,6 +25,9 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { ModalFeedbackComponent } from './components/modal-feedback/modal-feedback.component';
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 import { ProfessionalProfileComponent } from './pages/professional-profile/professional-profile.component';
+import { HttpClientModule } from '@angular/common/http';
+import { ClinicasPageComponent } from './pages/clinicas-page/clinicas-page.component';
+import { PasswordPageComponent } from './pages/password-page/password-page.component';
 
 @NgModule({
   declarations: [
@@ -49,13 +52,16 @@ import { ProfessionalProfileComponent } from './pages/professional-profile/profe
     InputCheckboxComponent,
     ModalFeedbackComponent,
     UserProfileComponent,
-    ProfessionalProfileComponent
+    ProfessionalProfileComponent,
+    ClinicasPageComponent,
+    PasswordPageComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     FormsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
