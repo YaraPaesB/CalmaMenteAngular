@@ -28,6 +28,7 @@ import { ProfessionalProfileComponent } from './pages/professional-profile/profe
 import { HttpClientModule } from '@angular/common/http';
 import { ClinicasPageComponent } from './pages/clinicas-page/clinicas-page.component';
 import { PasswordPageComponent } from './pages/password-page/password-page.component';
+import { PanicPageComponent } from './pages/panic-page/panic-page.component';
 
 @NgModule({
   declarations: [
@@ -54,7 +55,8 @@ import { PasswordPageComponent } from './pages/password-page/password-page.compo
     UserProfileComponent,
     ProfessionalProfileComponent,
     ClinicasPageComponent,
-    PasswordPageComponent
+    PasswordPageComponent,
+    PanicPageComponent
   ],
   imports: [
     BrowserModule,

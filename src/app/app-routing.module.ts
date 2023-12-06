@@ -10,6 +10,7 @@ import { ProfessionalProfileComponent } from './pages/professional-profile/profe
 import { UserProfileComponent } from './pages/user-profile/user-profile.component';
 import { ClinicasPageComponent } from './pages/clinicas-page/clinicas-page.component';
 import { PasswordPageComponent } from './pages/password-page/password-page.component';
+import { PanicPageComponent } from './pages/panic-page/panic-page.component';
 
 const routes: Routes = [
   {path:'', component: HomeComponent},
@@ -21,7 +22,8 @@ const routes: Routes = [
   {path: 'perfil-usuario', component:UserProfileComponent},
   {path: 'perfil-profissional', component:ProfessionalProfileComponent},
   {path: 'clinicas', component:ClinicasPageComponent},
-  {path: 'password', component:PasswordPageComponent}
+  {path: 'password', component:PasswordPageComponent},
+  {path: 'panic', component:PanicPageComponent}
 
 ];
 
