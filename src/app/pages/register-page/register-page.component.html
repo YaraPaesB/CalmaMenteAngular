@@ -45,8 +45,8 @@
                 formControlName="email" 
                 placeholder="Seu E-mail"
             />
-            <input type="text" formControlName="senha" placeholder="Defina sua Senha">
-            <input type="text" formControlName="confirmSenha" placeholder="Repita sua Senha">
+            <input type="password" formControlName="senha" placeholder="Defina sua Senha">
+            <input type="password" formControlName="confirmSenha" placeholder="Repita sua Senha">
             <app-btn-pages [disabled]="!registerForm.valid || !validateCrp()" [color]="BtnColors.register" text="Cadastre-se" />
         </form>
         
