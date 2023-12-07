@@ -16,7 +16,7 @@
     <div class="flex_center flex_column gap-32">
         <form [formGroup]="loginForm" (ngSubmit)="onSubmit()">
             <input type="text" formControlName="email" placeholder="E-mail">
-            <input type="text" formControlName="senha" placeholder="Senha">
+            <input type="password" formControlName="senha" placeholder="Senha">
             <label for="userType">
                 <input type="checkbox"  formControlName="userType" id="userType">
                 Sou Profissional
